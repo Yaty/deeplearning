@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pepe the frog</title>
+</head>
+<body>
+    <center>
+        <img src="{{url_for('static', filename='pepe.png')}}" width="200" height="200"/><br><br>
+
+        <form action="evaluate" method="post" enctype="multipart/form-data">
+            <label for="file">Select image :</label><br><br>
+            <input name="file" type="file" accept="image/*"/><br><br>
+            <input type="submit"/>
+        </form>
+    </center>
+</body>
+</html>
